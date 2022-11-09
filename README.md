@@ -16,6 +16,8 @@ This is not supposed to be a role model implementation, this is just to illustra
         command: yarn run start
         volumes:
         - ./admin:/usr/src/app
+        environment:
+        - ADMIN_URL=http://admin.workadventure.localhost
         labels:
         - "traefik.enable=true"
         - "traefik.http.routers.admin.rule=Host(`admin.workadventure.localhost`)"
@@ -33,12 +35,8 @@ This is not supposed to be a role model implementation, this is just to illustra
     ADMIN_API_URL: http://admin:8080
     ```
 
-1. Copy the the file `play/src/pusher/data/woka.json` to the admin folder
-
 1. Fire it up
 
 ## Testing
 
-Now that you are done, just head up to your local [instance](http://play.workadventure.localhost). Only the firt woka will
-be available for selection in this example and will be used regardless of your selection. As for the room URL, you can use
-anything in the form `/_/*`. Whatever you use, the starter map will be loaded.
+Now that you are done, just head up to your local [instance](http://play.workadventure.localhost). You will see that there will be a new category in the top for "extra" and some additional hair and accessories will be present
