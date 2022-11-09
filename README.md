@@ -33,7 +33,7 @@ This is not supposed to be a role model implementation, this is just to illustra
     ADMIN_API_URL: http://admin:8080
     ```
 
-1. Copy the the file `./pusher/data/woka.json` to the admin folder
+1. Copy the the file `play/src/pusher/data/woka.json` to the admin folder
 
 1. Fire it up
 
